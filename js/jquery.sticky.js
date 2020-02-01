@@ -66,6 +66,14 @@
             s.stickyElement.parent().removeClass(s.className);
             s.stickyElement.trigger('sticky-end', [s]);
             s.currentTop = null;
+
+            $('.logoBlue').addClass('visible');
+            $('.logoBlue').removeClass('inVisible');
+    
+            $('.logoGold').removeClass('visible');
+            $('.logoGold').addClass('inVisible');
+
+
           }
         }
         else {
@@ -94,6 +102,12 @@
               .css('z-index', s.zIndex);
 
             s.stickyElement.parent().addClass(s.className);
+
+            $('.logoBlue').removeClass('visible');
+            $('.logoBlue').addClass('inVisible');
+    
+            $('.logoGold').addClass('visible');
+            $('.logoGold').removeClass('inVisible');
 
             if (s.currentTop === null) {
               s.stickyElement.trigger('sticky-start', [s]);

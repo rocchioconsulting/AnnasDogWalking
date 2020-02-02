@@ -526,7 +526,9 @@ body:after {
     -o-transition: .3s all ease;
     transition: .3s all ease; }
   .sticky-wrapper .site-navbar {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    /*
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); */ }
+
     .sticky-wrapper .site-navbar .site-menu-toggle {
       color: #fff; }
     .sticky-wrapper .site-navbar .site-logo a {
@@ -621,8 +623,8 @@ body:after {
     background: #f8f9fa; }
     @media (max-width: 991.98px) {
       .circle-bg:after {
-        bottom: 0px;
-        right: -90px; } }
+        bottom: -200px;
+        right: -0px; } }
 
 .site-block-subscribe .btn {
   padding-left: 20px;
@@ -2034,14 +2036,14 @@ figure figcaption {
 
   .logoBlue{
     float: left;
-    width: 11%;
+    width: 40px;
     height: auto;
     margin-right: 10px;
   }
 
   .logoGold{
     float: left;
-    width: 11%;
+    width: 40px;
     height: auto;
     margin-right: 10px;
   }
@@ -2053,3 +2055,4 @@ figure figcaption {
   .inVisible{
     display: none !important;
   }
+  
